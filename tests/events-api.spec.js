@@ -12,7 +12,7 @@ test('event creation', async ({ request }) => {
   const resDataRaw = await response.body();
   const resData = JSON.parse(resDataRaw.toString());
   expect(resData).toHaveProperty('event.id');
-  expect(resData.event.title).toBe(testTitle);
+  expect(resData.event.title).toB(testTitle);
 });
 
 test('getting events', async ({ request }) => {
